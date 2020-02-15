@@ -1,0 +1,32 @@
+ hadoop fs -mkdir /user/user1/semibench/data/customers
+ hadoop fs -put customers.tbl /user/user1/semibench/data/customers
+ 
+ 
+ hadoop fs -mkdir /user/user1/semibench/data/items
+ hadoop fs -put items.tbl /user/user1/semibench/data/items
+ 
+ hadoop fs -mkdir /user/user1/semibench/data/product_reviews
+ hadoop fs -put product_reviews.tbl /user/user1/semibench/data/product_reviews
+ 
+ hadoop fs -mkdir /user/user1/semibench/data/web_pages
+ hadoop fs -put web_pages.tbl /user/user1/semibench/data/web_pages
+ 
+ 
+ hadoop fs -mkdir /user/user1/semibench/data/web_sales
+ hadoop fs -put web_sales.tbl /user/user1/semibench/data/web_sales
+ 
+ hadoop fs -mkdir /user/user1/semibench/data/store_sales
+ hadoop fs -put store_sales.tbl /user/user1/semibench/data/store_sales
+ 
+ hadoop fs -mkdir /user/user1/semibench/data/stores
+ hadoop fs -put stores.tbl /user/user1/semibench/data/stores
+  
+hadoop fs -mkdir /user/user1/semibench/data/web_logs
+hadoop fs -put clicks.json /user/user1/semibench/data/web_logs
+
+--hadoop fs -mkdir /user/user1/semibench/data/test
+--hadoop fs -put test.json /user/user1/semibench/data/test
+
+
+--hadoop fs -mkdir /user/user1/semibench/data/static_web_logs
+--hadoop fs -put clicks.tbl /user/user1/semibench/data/static_web_logs
