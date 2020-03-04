@@ -15,7 +15,7 @@ avg(ss_quantity) as Avg_Quantity,
 corr(ss_item_id, ss_quantity) as PearsonCC_Item_Q,
 min(to_date(ss_ts)) as Earliest,
 max(to_date(ss_ts)) as Latest
-from store_sales
+from store_sales_part_customer_id
 group by ss_customer_id;
 
 

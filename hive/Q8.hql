@@ -4,7 +4,7 @@
 use bigbenchv2;
 
 SELECT ss_item_id , COLLECT_SET(ss_customer_id)
-FROM store_sales
+FROM store_sales_part_item_id
 GROUP BY ss_item_id;
 
 
