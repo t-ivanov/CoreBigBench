@@ -1,8 +1,8 @@
 
 
 -- Query parameters
-set q26_i_category_IN='cat#13';
-set q26_count_ss_item_id=5;
+set q22_i_category_IN='cat#13';
+set q22_count_ss_item_id=5;
 set TEMP_RESULT_TABLE=q22_prep_data;
 
 -- set the database
@@ -56,8 +56,8 @@ FROM
 	store_sales ss
 INNER JOIN items i ON ss.ss_item_id = i.i_item_id
 WHERE 
-	i.i_category_name IN (${hiveconf:q26_i_category_IN})
+	i.i_category_name IN (${hiveconf:q22_i_category_IN})
 	AND ss.ss_customer_id IS NOT NULL 
 	GROUP BY ss.ss_customer_id  
-	HAVING count(ss.ss_item_id) > ${hiveconf:q26_count_ss_item_id}
+	HAVING count(ss.ss_item_id) > ${hiveconf:q22_count_ss_item_id}
 ORDER BY cid;
