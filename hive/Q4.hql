@@ -11,7 +11,11 @@ FROM
 		web_logs.line,
 		'wl_webpage_name' 
 	)logs as wl_webpage_name
-WHERE wl_webpage_name IS NOT NULL
+WHERE wl_webpage_name IS NULL
 ;
 
+--- Time taken: 889.707 seconds
+
+
+--- WHERE wl_webpage_name IS NOT NULL
 ---Time taken: 931.704 seconds, Fetched: 316450046 row(s)
